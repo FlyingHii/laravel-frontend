@@ -10,13 +10,13 @@
   "require": {},
   "autoload": {
     "psr-4": {
-      "Manifera\\Catalog\\": "src/"
+      "Manifera\\Sales\\": "src/"
     }
   },
   "extra": {
     "laravel": {
       "providers": [
-        "Manifera\\Catalog\\Providers\\CatalogServiceProvider"
+        "Manifera\\Sales\\Providers\\CatalogServiceProvider"
       ]
     }
   },

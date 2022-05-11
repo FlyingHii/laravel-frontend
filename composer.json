@@ -25,7 +25,9 @@
             "App\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
-            "Manifera\\Admin\\": "packages/Manifera/Admin/src"
+            "Manifera\\Admin\\": "packages/Manifera/Admin/src",
+            "Manifera\\Sales\\": "packages/Manifera/Sales/src",
+            "Manifera\\Catalog\\": "packages/Manifera/Catalog/src"
         }
     },
     "autoload-dev": {

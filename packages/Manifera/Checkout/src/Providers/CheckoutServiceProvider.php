@@ -1,11 +1,11 @@
 <?php
 
-namespace Manifera\Catalog\Providers;
+namespace Manifera\Checkout\Providers;
 
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 use Illuminate\Support\ServiceProvider;
 
-class CatalogServiceProvider extends ServiceProvider
+class CheckoutServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.

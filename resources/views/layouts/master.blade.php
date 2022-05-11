@@ -4,12 +4,17 @@
     <title>@yield('title')</title>
 </head>
 <body>
+
+<h1>
+    @yield('title')
+</h1>
 @section('sidebar')
     This is the master sidebar.
 @show
 
 <div class="container">
-    @include('catalog::product.item')
+    @yield('content')
 </div>
+@yield('script')
 </body>
 </html>
