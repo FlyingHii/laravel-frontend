@@ -1,11 +1,11 @@
 <?php
 
-namespace Manifera\Admin\Providers;
+namespace Manifera\Sales\Providers;
 
 use Illuminate\Database\Eloquent\Factory as EloquentFactory;
 use Illuminate\Support\ServiceProvider;
 
-class AdminServiceProvider extends ServiceProvider
+class SalesServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap services.
@@ -15,7 +15,8 @@ class AdminServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/../Http/routes.php');
-        $this->loadViewsFrom(__DIR__ . '/../resources/view', 'admin');
+        $this->loadViewsFrom(__DIR__ . '/../resources/view/admin', 'admin');
+        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
 
     /**
