@@ -15,7 +15,7 @@ class SalesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/../Http/routes.php');
-        $this->loadViewsFrom(__DIR__ . '/../resources/view/admin', 'admin');
+        $this->loadViewsFrom(__DIR__ . '/../Resources/view/admin', 'admin');
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
     }
 

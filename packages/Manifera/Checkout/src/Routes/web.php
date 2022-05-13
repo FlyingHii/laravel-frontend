@@ -9,8 +9,11 @@ Route::group([
         'prefix' => 'cart',
         'namespace' => 'Cart'
     ], function () {
-        Route::get('add', 'Index@add')->defaults('_config', [
-            'view'=>'admin::product.index'
-        ])->name('admin::catalog.products');
+        Route::get('/', 'Index@add')->defaults('_config', [
+            'view'=>'checkout::cart.index'
+        ])->name('checkout::catalog.products');
+
+        Route::post('add', 'Action@add')->defaults('_config', [
+        ])->name('checkout::catalog.products');
     });
 });

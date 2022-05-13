@@ -27,24 +27,14 @@ class Index extends \App\Http\Controllers\Controller
     {
         $product = Product::where('id', $id)->first();
         if (!$product) {
-            $product = new Product();
+            return redirect()->route('catalog::admin.product.create');
         }
         return view($this->_config['view'], compact('product'));
     }
 
-    public function update($id)
+    public function create()
     {
-        $request = request()->all();
-        $product = Product::where('id', $id)->first();
-        if (!$product) {
-            $product = new Product();
-        }
-        $product->name = $request['name'];
-        $product->price= $request['price'];
-        $product->qty= $request['qty'];
-        $product->sku= $request['sku'];
-        $product->save();
-
-        return redirect()->route('admin::catalog.products');
+        $product = new Product();
+        return view($this->_config['view'], compact('product'));
     }
 }

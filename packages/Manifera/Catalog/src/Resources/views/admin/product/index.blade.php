@@ -6,11 +6,11 @@
 @stop
 
 @section('content')
-    <a href="{{route('admin::catalog.products.update', ['id' => 0])}}">Create</a>
+    <a href="{{route('catalog::admin.product.create')}}">Create</a>
     <div>
         <ul>
             @foreach($products->all() as $product)
-                <li><a href="{{route('admin::catalog.products.update', ['id' => $product->id])}}">{{$product->name}}</a></li>
+                <li><a href="{{route('catalog::admin.product.edit', ['id' => $product->id])}}">{{$product->name}}</a></li>
             @endforeach
         </ul>
     </div>

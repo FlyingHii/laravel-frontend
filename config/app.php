@@ -179,7 +179,10 @@ return [
          * Manifera Providers
          */
         Manifera\Admin\Providers\AdminServiceProvider::class,
-        Manifera\Catalog\Providers\CatalogServiceProvider::class
+        Manifera\Catalog\Providers\CatalogServiceProvider::class,
+        Manifera\Core\Providers\ServiceProvider::class,
+        Manifera\Checkout\Providers\CheckoutServiceProvider::class,
+        Manifera\Sales\Providers\SalesServiceProvider::class
     ],
 
     /*

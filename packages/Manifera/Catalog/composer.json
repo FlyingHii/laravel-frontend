@@ -2,10 +2,10 @@
   "name": "manifera/catalog",
   "license": "MIT",
   "authors": [
-    {
-      "name": "Jitendra Singh",
-      "email": "jitendra@webkul.com"
-    }
+        {
+            "name": "Jitendra Singh",
+            "email": "jitendra@webkul.com"
+        }
   ],
   "require": {},
   "autoload": {

@@ -7,11 +7,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        @if ($favicon = core()->getConfigData('general.design.admin_logo.favicon'))
-            <link rel="icon" sizes="16x16" href="{{ \Illuminate\Support\Facades\Storage::url($favicon) }}" />
-        @else
-            <link rel="icon" sizes="16x16" href="{{ asset('vendor/webkul/ui/assets/images/favicon.ico') }}" />
-        @endif
+{{--        @if ($favicon = core()->getConfigData('general.design.admin_logo.favicon'))--}}
+{{--            <link rel="icon" sizes="16x16" href="{{ \Illuminate\Support\Facades\Storage::url($favicon) }}" />--}}
+{{--        @else--}}
+{{--            <link rel="icon" sizes="16x16" href="{{ asset('vendor/webkul/ui/assets/images/favicon.ico') }}" />--}}
+{{--        @endif--}}
 
         <link rel="stylesheet" href="{{ asset('vendor/webkul/ui/assets/css/ui.css?v=10') }}">
         <link rel="stylesheet" href="{{ asset('vendor/webkul/admin/assets/css/admin.css?v=10') }}">
@@ -21,38 +21,40 @@
 
         @yield('css')
 
-        {!! view_render_event('bagisto.admin.layout.head') !!}
+{{--        {!! view_render_event('bagisto.admin.layout.head') !!}--}}
 
     </head>
 
-    <body @if (core()->getCurrentLocale() && core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif style="scroll-behavior: smooth;">
-        {!! view_render_event('bagisto.admin.layout.body.before') !!}
+    <body
+{{--        @if (core()->getCurrentLocale() && core()->getCurrentLocale()->direction == 'rtl') class="rtl" @endif --}}
+    style="scroll-behavior: smooth;">
+{{--        {!! view_render_event('bagisto.admin.layout.body.before') !!}--}}
 
         <div id="app">
 
             <flash-wrapper ref='flashes'></flash-wrapper>
 
-            {!! view_render_event('bagisto.admin.layout.nav-top.before') !!}
+{{--            {!! view_render_event('bagisto.admin.layout.nav-top.before') !!}--}}
 
-            @include ('admin::layouts.nav-top')
+{{--            @include ('admin::layouts.nav-top')--}}
 
-            {!! view_render_event('bagisto.admin.layout.nav-top.after') !!}
+{{--            {!! view_render_event('bagisto.admin.layout.nav-top.after') !!}--}}
 
 
-            {!! view_render_event('bagisto.admin.layout.nav-left.before') !!}
+{{--            {!! view_render_event('bagisto.admin.layout.nav-left.before') !!}--}}
 
-            @include ('admin::layouts.nav-left')
+{{--            @include ('admin::layouts.nav-left')--}}
 
-            {!! view_render_event('bagisto.admin.layout.nav-left.after') !!}
+{{--            {!! view_render_event('bagisto.admin.layout.nav-left.after') !!}--}}
 
 
             <div class="content-container">
 
-                {!! view_render_event('bagisto.admin.layout.content.before') !!}
+{{--                {!! view_render_event('bagisto.admin.layout.content.before') !!}--}}
 
                 @yield('content-wrapper')
 
-                {!! view_render_event('bagisto.admin.layout.content.after') !!}
+{{--                {!! view_render_event('bagisto.admin.layout.content.after') !!}--}}
 
             </div>
 
@@ -150,7 +152,7 @@
         </script>
         @stack('scripts')
 
-        {!! view_render_event('bagisto.admin.layout.body.after') !!}
+{{--        {!! view_render_event('bagisto.admin.layout.body.after') !!}--}}
 
         <div class="modal-overlay"></div>
     </body>
