@@ -9,5 +9,10 @@ use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController
 {
+    protected $_config;
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    public function __construct()
+    {
+        $this->_config = request('_config');
+    }
 }

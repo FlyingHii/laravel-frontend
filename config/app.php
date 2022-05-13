@@ -175,6 +175,15 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /**
+         * Manifera Providers
+         */
+        Manifera\Admin\Providers\AdminServiceProvider::class,
+        Manifera\Catalog\Providers\CatalogServiceProvider::class,
+        Manifera\Core\Providers\ServiceProvider::class,
+        Manifera\Checkout\Providers\CheckoutServiceProvider::class,
+        Manifera\Sale\Providers\SalesServiceProvider::class,
+        Manifera\Theme\Providers\ServiceProvider::class
     ],
 
     /*

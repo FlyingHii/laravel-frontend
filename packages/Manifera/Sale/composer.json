@@ -1,0 +1,24 @@
+{
+  "name": "manifera/catalog",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jitendra Singh",
+      "email": "jitendra@webkul.com"
+    }
+  ],
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "Manifera\\Sale\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Manifera\\Sale\\Providers\\CatalogServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "dev"
+}
