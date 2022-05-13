@@ -2,8 +2,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::group([
-    'prefix' => 'sales',
-    'namespace' => 'Manifera\Sales\Http\Controllers'
+    'prefix' => 'sale',
+    'namespace' => 'Manifera\Sale\Http\Controllers'
 ], function () {
     Route::group([
         'prefix' => 'cart',

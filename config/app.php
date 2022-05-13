@@ -182,7 +182,8 @@ return [
         Manifera\Catalog\Providers\CatalogServiceProvider::class,
         Manifera\Core\Providers\ServiceProvider::class,
         Manifera\Checkout\Providers\CheckoutServiceProvider::class,
-        Manifera\Sales\Providers\SalesServiceProvider::class
+        Manifera\Sale\Providers\SalesServiceProvider::class,
+        Manifera\Theme\Providers\ServiceProvider::class
     ],
 
     /*

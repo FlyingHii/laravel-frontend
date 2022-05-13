@@ -31,7 +31,7 @@
 {{--        {!! view_render_event('bagisto.admin.layout.body.before') !!}--}}
 
         <div id="app">
-
+            <h1>@yield('page_title')</h1>
             <flash-wrapper ref='flashes'></flash-wrapper>
 
 {{--            {!! view_render_event('bagisto.admin.layout.nav-top.before') !!}--}}

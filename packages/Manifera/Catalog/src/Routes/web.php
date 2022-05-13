@@ -30,3 +30,17 @@ Route::group([
         ])->name('catalog::admin.product.action.edit');
     });
 });
+
+Route::group([
+    'prefix'    => 'catalog/',
+    'namespace' => 'Manifera\Catalog\Http\Controllers\Frontend'
+], function () {
+    Route::group([
+        'prefix'    => 'product',
+        'namespace' => 'Product'
+    ], function () {
+        Route::get('/{sku}', 'Index@index')->defaults('_config', [
+            'view' => 'catalog::frontend.product.index'
+        ])->name('catalog::frontend.products.index');
+    });
+});

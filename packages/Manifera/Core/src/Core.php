@@ -17,8 +17,8 @@ use Illuminate\Support\Facades\Config;
 //use Manifera\Core\Repositories\LocaleRepository;
 //use Manifera\Customer\Repositories\CustomerGroupRepository;
 //use Manifera\Product\Repositories\ProductFlatRepository;
-//use Manifera\Sales\Models\OrderItem;
-//use Manifera\Sales\Repositories\OrderItemRepository;
+//use Manifera\Sale\Models\OrderItem;
+//use Manifera\Sale\Repositories\OrderItemRepository;
 
 class Core
 {

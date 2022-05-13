@@ -26,9 +26,10 @@
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/",
             "Manifera\\Admin\\": "packages/Manifera/Admin/src",
-            "Manifera\\Sales\\": "packages/Manifera/Sales/src",
+            "Manifera\\Sale\\": "packages/Manifera/Sale/src",
             "Manifera\\Catalog\\": "packages/Manifera/Catalog/src",
             "Manifera\\Checkout\\": "packages/Manifera/Checkout/src",
+            "Manifera\\Theme\\": "packages/Manifera/Theme/src",
             "Manifera\\Core\\": "packages/Manifera/Core/src"
         }
     },
